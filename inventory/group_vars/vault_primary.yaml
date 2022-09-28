@@ -1,0 +1,3 @@
+vault_tls_leader_servername: 'vault.local'
+vault_tls_cert_file: '/path/to/vault.crt'
+vault_tls_key_file: '/path/to/vault.key'
