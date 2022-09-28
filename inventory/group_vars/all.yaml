@@ -1,0 +1,15 @@
+---
+# vault_license_string: ''
+# vault_system_vault_ca_cert: true
+# vault_enable_proxy: true
+# vault_proxy_http: 'https://http_proxy.example.com'
+# vault_proxy_https: 'https://https_proxy.example.com'
+# vault_proxy_no_proxy: '.example.com'
+vault_tls_leader_servername: 'vault.local'
+vault_license_file: '/path/to/vault.hclic'
+# vault_local_binary_location: '/path/to/bin/vault'
+vault_tls_ca_cert_file: '/path/to/ca.crt'
+vault_tls_cert_file: '/path/to/vault.crt'
+vault_tls_key_file: '/path/to/vault.key'
+use_hashicorp_repository: true
+enterprise: true

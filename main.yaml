@@ -1,0 +1,18 @@
+---
+# common values in inventory/group_vars/all.yaml
+- name: Setup primary vault cluster
+  hosts: vault_primary
+  become: true
+  roles:
+    - role: ansible-role-vault
+      vars:
+        vault_ansible_group: 'vault_primary'
+        vault_cluster_name: vault-primary
+- name: Setup secondary vault cluster
+  hosts: vault_secondary
+  become: true
+  roles:
+    - role: ansible-role-vault
+      vars:
+        vault_ansible_group: 'vault_secondary'
+        vault_cluster_name: vault-secondary

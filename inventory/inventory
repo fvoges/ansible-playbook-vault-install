@@ -1,0 +1,12 @@
+
+[vault_primary]
+vault01.primary.example.com
+vault02.primary.example.com
+vault03.primary.example.com
+
+[vault_secondary]
+vault01.secondary.example.com
+vault02.secondary.example.com
+vault03.secondary.example.com
+
+
