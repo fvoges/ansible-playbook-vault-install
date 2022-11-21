@@ -8,5 +8,6 @@
 # vault_local_binary_location: '/path/to/bin/vault'
 vault_license_file: '/path/to/vault.hclic'
 vault_tls_ca_cert_file: '/path/to/ca.crt'
-use_hashicorp_repository: true
-enterprise: true
+#use_hashicorp_repository: true
+#enterprise: true
+vault_version: 1.12.1+ent
