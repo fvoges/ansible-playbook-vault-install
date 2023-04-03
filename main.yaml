@@ -3,6 +3,10 @@
 - name: Setup primary vault cluster
   hosts: vault_primary
   become: true
+  # environment:
+  #   http_proxy: 'http://proxy.example.com/'
+  #   https_proxy: 'http://proxy.example.com/'
+  #   no_proxy: '.example.com,.example.org'
   roles:
     - role: ansible-role-vault
       vars:
@@ -12,6 +16,10 @@
 - name: Setup secondary vault cluster
   hosts: vault_secondary
   become: true
+  # environment:
+  #   http_proxy: 'http://proxy.example.com/'
+  #   https_proxy: 'http://proxy.example.com/'
+  #   no_proxy: '.example.com,.example.org'
   roles:
     - role: ansible-role-vault
       vars:
