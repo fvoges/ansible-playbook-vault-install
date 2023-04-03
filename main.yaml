@@ -8,6 +8,7 @@
       vars:
         vault_ansible_group: 'vault_primary'
         vault_cluster_name: vault-primary
+    - role: ansible-role-vault_extras
 - name: Setup secondary vault cluster
   hosts: vault_secondary
   become: true
@@ -16,3 +17,4 @@
       vars:
         vault_ansible_group: 'vault_secondary'
         vault_cluster_name: vault-secondary
+    - role: ansible-role-vault_extras
